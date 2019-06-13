@@ -1,0 +1,55 @@
+.header_main{height:120px;background-color: #fff;}
+.header_right .le-tips-white{border:1px solid #eee;  right:0; top:30px;}
+.header_right .le-tips-white .inner-wrap{width:260px; height:142px; padding-top:20px; border-radius:0;}
+.header_right .le-tips-white .inner-cont{float:left; text-align:center;}
+.header_right .le-tips-white .inner-wrap .cont-sec{margin-left:30px;}
+.header_right .le-tips-white .arr-top{left:auto; right:20px; top:-15px; color:#fff;}
+.header_right .le-tips-white .arr-top-s{top:-16px; color:#eee}
+.header_links{height: 30px;line-height: 30px;background-color: #f7f7f7;font-size: 12px;}
+.header_link{float: left;}
+.header_link li,.header_right li{display: inline-block; *display:inline;*zoom:1; margin-left:-8px;}
+.header_link li>a,.header_right li>a{display: inline-block; *display:inline;*zoom:1;padding: 0 13px;color: #999999;}
+.header_link li dl,.header_right li dl,.header_right li .tips{display: none;}
+.header_link li:first-child a{padding-left: 0px;}
+.header_links .hd_list{position:relative;z-index: 900;}
+
+.le_icon{
+    display: inline-block;
+    background-image: url(http://img2-lemall.letvimg.com/le-cloud/resource/images/home/20190506/logo.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+
+
+/*购物车头部差异*/
+.cart_header .center,.cart_mainbody .center{width:990px;}
+.cart_header .header_link{display:none;}
+.cart_header .header_right li{display:none;}
+.cart_header .header_right .header_login,.cart_header .header_right .header_help{display:inline-block;}
+.cart_header .header_logo{width:500px;}
+
+/*购物车头部差异结束*/
+
+.header_main .header_cart{display:block;}
+.header_logo{width:590px;height:120px;float:left;}
+
+.header_logo .logo{
+    float:left;
+    width: 180px;
+    height: 120px;
+}
+/*.header_logo .logo .icon-logo-color{margin-top: 40px;}*/
+.header_logo .header_logo_right{float:left;padding:0 30px 0 20px;height:120px;line-height:120px;font-size:14px;color:#999;}
+
+.shoping_steps{width: 420px;height: 50px;padding-top: 35px;float: right;font-size:0;margin-right:-16px;}
+.shoping_steps li{width: 140px;display: inline-block;position: relative;height: 50px;text-align: center;font-size:12px;}
+.shoping_steps li .bg_line{width: 100%;height: 2px;position: absolute;top: 10px;left: 0;background-color: #ccc;z-index:1;}
+.shoping_steps li:first-child .bg_line{width: 50%;left:50%;}
+.shoping_steps li:last-child .bg_line{width: 50%;left:0;}
+.shoping_steps li.cur .bg_line{background-color:#3393f2;}
+.shoping_steps li .num{width: 20px;height: 20px;line-height: 20px;position: absolute;top: 0px;left:60px;z-index:2;background-color: #ccc;text-align: center;border-radius: 10px;color: #fff;font-size: 12px;}
+.shoping_steps li.cur .num{background-color:#3393f2;}
+.shoping_steps li .text{width: 100%;height: 30px;padding-top: 30px;}
+	/*购物车头部进度展示 结束*/
+.pro_top_piao{width:100%;min-width:1200px;height:70px;z-index:200; padding:0; top:194px;  background-color:#fff;}

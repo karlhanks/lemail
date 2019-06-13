@@ -7,6 +7,7 @@
         data: { w_sid: sid },
         dataType: 'json'
     }).done(function (d) {
+        
         $('.bread_nav b').text(d.title);
         $('.base_info .title').html(d.title);
         $('head title').html(d.title);
@@ -16,7 +17,9 @@
         $('#js_price').html(d.price);
         $('#promotionList').html(d.nowprice);
         $('#cart-countPrice').html(d.nowprice);
-        var arr=d.urls.split(',')
+        
+        var arr=d.urls.split(',');
+        
         var str='';
         $.each(arr,function(index,value){
             str+='<li><img src="'+value+'"/></li>';
@@ -61,7 +64,15 @@
     });
     //商品数量和价格变化
     var num=Number($('#tvSelectNum').val());
-    
+    $('#tvSelectNum').on('blur',function(){
+        if($('#tvSelectNum').val()>=1){
+            $('#cart-countPrice').html($('#tvSelectNum').val()*$('#promotionList').html());
+            $('.minus.invalid').css({'background-position':'right top',"cursor":"pointer"});
+        }else{
+            $('#tvSelectNum').val(1)
+        };
+        num=Number($('#tvSelectNum').val());
+    });
     $('.plus').on('click',function(){
         num++;
         $('.minus.invalid').css({'background-position':'right top',"cursor":"pointer"});
@@ -104,6 +115,4 @@
 
     });
     
-
-
 }()

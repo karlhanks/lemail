@@ -13,7 +13,12 @@
         type="image/x-icon" />
     <link rel="stylesheet" href="css/globa.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
     <script src="script/jquery.js"></script>
+    <script src="script/jquery-ui.js"></script>
+    <script src="script/jquery.lazyload.js"></script>
+
+    
     
 
 </head>
@@ -285,8 +290,8 @@
                 <div class="Le_headother_serch">
                     <div class="search_wrap">
                         <div class="clearfix">
-                            <input type="text" class="f-search-text" id="txt_company" style="color:#999">
-                            <button type="button" class="f-search-btn" id="search_submit"><i class="gap">搜</i><i
+                            <input type="text" class="f-search-text" id="autocomplete"  style="color:#999">
+                            <button type="button" class="f-search-btn" id="search_btn"><i class="gap">搜</i><i
                                     class="gap">索</i></button>
                         </div>
                         <div class="L_popupmenu">
@@ -459,35 +464,7 @@
     </div>
     <!-- 5图广告位 版块 E -->
 
-    <!-- 促销 版块 S -->
-    <div class="section">
-        <div class="area-center">
-            <div id="promotion-container" class="promotion-container">
-                <div class="clearfix area-header-wrap">
-                    <div class="clearfix area-title">
-                        <strong class="title">超级秒杀</strong>
-                        <i class="gap"></i>
-                        <span class="desc">每周二、四限时抢购</span>
-                        <span class="more"><a href="javascript:;" target="_blank">更多秒杀 »</a></span>
-                    </div>
-                    <div class="clearfix area-timer">
-                        <ul class="clearfix timer-list">
-                            <li class="day">00</li>
-                            <li class="gap"><span>天</span></li>
-                            <li class="hour">00</li>
-                            <li class="gap separator"><span><em>:</em></span></li>
-                            <li class="min">00</li>
-                            <li class="gap separator"><span><em>:</em></span></li>
-                            <li class="sec">00</li>
-                        </ul>
-                        <div class="timer-text"></div>
-                    </div>
-                    <div class="area-stay-tuned">敬请期待！</div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- 促销 版块 E -->
+    
 
     <!-- 限时购 版块 S -->
     <div class="section reduced-price">
@@ -501,7 +478,7 @@
                 <ul class="clearfix product-list">
                     <li>
                         <div class="product-pic">
-                            <a class="product-pic-href" href="details.html">
+                            <a class="product-pic-href" href="">
                                 <img class="imgsrc" src="" />
                             </a>
                         </div>
@@ -512,14 +489,14 @@
                         </div>
                         <div class="product-btn">
                             <strong>
-                                <a href="details.html"
+                                <a href=""
                                     target="_blank">立即购买</a>
                             </strong>
                         </div>
                     </li>
                     <li>
                         <div class="product-pic">
-                            <a class="product-pic-href" href="details.html">
+                            <a class="product-pic-href" href="">
                                 <img class="imgsrc"
                                     src="" />
                             </a>
@@ -531,14 +508,14 @@
                         </div>
                         <div class="product-btn">
                             <strong>
-                                <a href="details.html"
+                                <a href=""
                                     target="_blank">立即购买</a>
                             </strong>
                         </div>
                     </li>
                     <li>
                         <div class="product-pic">
-                            <a class="product-pic-href" href="details.html">
+                            <a class="product-pic-href" href="">
                                 <img class="imgsrc"
                                     src="" />
                             </a>
@@ -550,14 +527,14 @@
                         </div>
                         <div class="product-btn">
                             <strong>
-                                <a href="details.html"
+                                <a href=""
                                     target="_blank">立即购买</a>
                             </strong>
                         </div>
                     </li>
                     <li>
                         <div class="product-pic">
-                            <a class="product-pic-href" href="details.html">
+                            <a class="product-pic-href" href="">
                                 <img class="imgsrc"
                                     src="" />
                             </a>
@@ -637,7 +614,7 @@
                             <span style="background-color:#f2a705">热卖</span>
                         </div>
                         <div class="product-pic">
-                            <a href="https://www.lemall.com/product/products-pid-MLLQ000002.html" target="_blank">
+                            <a  class="product-pic-href" href="">
                                 <img
                                     src="http://img2-lemall.letvimg.com/le-cloud/s-pc/resource/img/2019-05-17/201905/1558061623851.jpg" />
                             </a>
@@ -662,7 +639,7 @@
                             <span style="background-color:#ed1c24">直降300</span>
                         </div>
                         <div class="product-pic">
-                            <a href="https://www.lemall.com/product/products-pid-GWGT400293.html" target="_blank">
+                            <a class="product-pic-href" href="https://www.lemall.com/product/products-pid-GWGT400293.html" target="_blank">
                                 <img
                                     src="http://img2-lemall.letvimg.com/le-cloud/s-pc/resource/img/2018-12-06/201812/1544073772757.jpg" />
                             </a>
@@ -687,7 +664,7 @@
                             <span style="background-color:#ed1c24">直降300</span>
                         </div>
                         <div class="product-pic">
-                            <a href="https://www.lemall.com/product/products-pid-MLHH000049.html" target="_blank">
+                            <a class="product-pic-href" href="https://www.lemall.com/product/products-pid-MLHH000049.html" target="_blank">
                                 <img
                                     src="http://img2-lemall.letvimg.com/le-cloud/s-pc/resource/img/2019-05-17/201905/1558062452968.jpg" />
                             </a>
@@ -714,7 +691,7 @@
                             <span style="background-color:#f2a705">热卖</span>
                         </div>
                         <div class="product-pic">
-                            <a href="https://www.lemall.com/product/products-pid-MLHH000051.html" target="_blank">
+                            <a class="product-pic-href" href="https://www.lemall.com/product/products-pid-MLHH000051.html" target="_blank">
                                 <img
                                     src="http://img2-lemall.letvimg.com/le-cloud/s-pc/resource/img/2019-05-17/201905/1558063554831.jpg" />
                             </a>
@@ -739,7 +716,7 @@
                             <span style="background-color:#ed1c24">直降400</span>
                         </div>
                         <div class="product-pic">
-                            <a href="https://www.lemall.com/product/products-pid-GWGT501251.html" target="_blank">
+                            <a class="product-pic-href" href="https://www.lemall.com/product/products-pid-GWGT501251.html" target="_blank">
                                 <img
                                     src="http://img2-lemall.letvimg.com/le-cloud/s-pc/resource/img/2018-12-06/201812/1544072651289.jpg" />
                             </a>
@@ -765,7 +742,7 @@
                             <span style="background-color:#f2a705">热卖</span>
                         </div>
                         <div class="product-pic">
-                            <a href="https://www.lemall.com/product/products-pid-MLHH000050.html" target="_blank">
+                            <a class="product-pic-href" href="https://www.lemall.com/product/products-pid-MLHH000050.html" target="_blank">
                                 <img
                                     src="http://img2-lemall.letvimg.com/le-cloud/s-pc/resource/img/2019-05-17/201905/1558061340463.jpg" />
                             </a>
@@ -839,7 +816,7 @@
                 <ul class="clearfix product-list">
                     <li>
                         <div class="product-pic">
-                            <a href="http://www.lemall.com/product/products-pid-MLHH000033-n-11057.html"
+                            <a class="product-pic-href" href="http://www.lemall.com/product/products-pid-MLHH000033-n-11057.html"
                                 target="_blank">
                                 <img
                                     src="http://img2-lemall.letvimg.com/le-cloud/s-pc/resource/img/2018-12-10/201812/1544441847981.png" />
@@ -860,7 +837,7 @@
                     </li>
                     <li>
                         <div class="product-pic">
-                            <a href="https://www.lemall.com/product/products-pid-1000384.html" target="_blank">
+                            <a class="product-pic-href" href="https://www.lemall.com/product/products-pid-1000384.html" target="_blank">
                                 <img
                                     src="http://img2-lemall.letvimg.com/le-cloud/s-pc/resource/img/2019-03-30/201903/1553924609915.jpg" />
                             </a>
@@ -880,7 +857,7 @@
                     </li>
                     <li>
                         <div class="product-pic">
-                            <a href="https://www.lemall.com/product/products-pid-1000550.html" target="_blank">
+                            <a class="product-pic-href" href="https://www.lemall.com/product/products-pid-1000550.html" target="_blank">
                                 <img
                                     src="http://img2-lemall.letvimg.com/le-cloud/s-pc/resource/img/2019-03-30/201903/1553925788635.jpg" />
                             </a>
@@ -900,7 +877,7 @@
                     </li>
                     <li>
                         <div class="product-pic">
-                            <a href="https://www.lemall.com/product/products-pid-1001406-sku-401600000003.html"
+                            <a class="product-pic-href" href="https://www.lemall.com/product/products-pid-1001406-sku-401600000003.html"
                                 target="_blank">
                                 <img
                                     src="http://img2-lemall.letvimg.com/le-cloud/s-pc/resource/img/2018-12-10/201812/1544441937602.png" />
@@ -921,7 +898,7 @@
                     </li>
                     <li>
                         <div class="product-pic">
-                            <a href="https://www.lemall.com/product/products-pid-1000305.html" target="_blank">
+                            <a class="product-pic-href" href="https://www.lemall.com/product/products-pid-1000305.html" target="_blank">
                                 <img
                                     src="http://img2-lemall.letvimg.com/le-cloud/s-pc/resource/img/2018-12-06/201812/1544075350718.jpg" />
                             </a>
@@ -941,7 +918,7 @@
                     </li>
                     <li>
                         <div class="product-pic">
-                            <a href="https://www.lemall.com/product/products-pid-1001393.html" target="_blank">
+                            <a class="product-pic-href" href="https://www.lemall.com/product/products-pid-1001393.html" target="_blank">
                                 <img
                                     src="http://img2-lemall.letvimg.com/le-cloud/s-pc/resource/img/2019-03-30/201903/1553926326991.jpg" />
                             </a>
@@ -961,7 +938,7 @@
                     </li>
                     <li>
                         <div class="product-pic">
-                            <a href="https://www.lemall.com/product/products-pid-1000244.html" target="_blank">
+                            <a class="product-pic-href" href="https://www.lemall.com/product/products-pid-1000244.html" target="_blank">
                                 <img
                                     src="http://img2-lemall.letvimg.com/le-cloud/s-pc/resource/img/2018-12-09/201812/1544284992935.jpg" />
                             </a>
@@ -981,7 +958,7 @@
                     </li>
                     <li>
                         <div class="product-pic">
-                            <a href="https://www.lemall.com/product/products-pid-1001557.html" target="_blank">
+                            <a class="product-pic-href" href="https://www.lemall.com/product/products-pid-1001557.html" target="_blank">
                                 <img
                                     src="http://img2-lemall.letvimg.com/le-cloud/s-pc/resource/img/2018-12-09/201812/1544315066335.jpg" />
                             </a>
@@ -1061,7 +1038,7 @@
                 <ul class="clearfix product-list">
                     <li>
                         <div class="product-pic">
-                            <a href="https://www.lemall.com/product/products-pid-1011273.html" target="_blank">
+                            <a class="product-pic-href" href="https://www.lemall.com/product/products-pid-1011273.html" target="_blank">
                                 <img
                                     src="http://img2-lemall.letvimg.com/le-cloud/s-pc/resource/img/2019-06-04/201906/1559616806051.jpg" />
                             </a>
@@ -1081,7 +1058,7 @@
                     </li>
                     <li>
                         <div class="product-pic">
-                            <a href="https://www.lemall.com/product/products-pid-1011281-sku-H05011000511.html"
+                            <a class="product-pic-href" href="https://www.lemall.com/product/products-pid-1011281-sku-H05011000511.html"
                                 target="_blank">
                                 <img
                                     src="http://img2-lemall.letvimg.com/le-cloud/s-pc/resource/img/2019-05-29/201905/1559111675581.jpeg" />
@@ -1102,7 +1079,7 @@
                     </li>
                     <li>
                         <div class="product-pic">
-                            <a href="https://www.lemall.com/product/products-pid-1011179.html" target="_blank">
+                            <a class="product-pic-href" href="https://www.lemall.com/product/products-pid-1011179.html" target="_blank">
                                 <img
                                     src="http://img2-lemall.letvimg.com/le-cloud/s-pc/resource/img/2019-05-31/201905/1559296352627.png" />
                             </a>
@@ -1122,7 +1099,7 @@
                     </li>
                     <li>
                         <div class="product-pic">
-                            <a href="https://www.lemall.com/product/products-pid-1011214.html" target="_blank">
+                            <a class="product-pic-href" href="https://www.lemall.com/product/products-pid-1011214.html" target="_blank">
                                 <img
                                     src="http://img2-lemall.letvimg.com/le-cloud/s-pc/resource/img/2019-06-03/201906/1559527658783.jpg" />
                             </a>
@@ -1142,7 +1119,7 @@
                     </li>
                     <li>
                         <div class="product-pic">
-                            <a href="https://www.lemall.com/product/products-pid-1011049.html" target="_blank">
+                            <a class="product-pic-href" href="https://www.lemall.com/product/products-pid-1011049.html" target="_blank">
                                 <img
                                     src="http://img2-lemall.letvimg.com/le-cloud/s-pc/resource/img/2019-05-31/201905/1559294202834.jpeg" />
                             </a>
@@ -1162,7 +1139,7 @@
                     </li>
                     <li>
                         <div class="product-pic">
-                            <a href="https://www.lemall.com/product/products-pid-1011255.html" target="_blank">
+                            <a class="product-pic-href" href="https://www.lemall.com/product/products-pid-1011255.html" target="_blank">
                                 <img
                                     src="http://img2-lemall.letvimg.com/le-cloud/s-pc/resource/img/2019-05-31/201905/1559294842549.jpeg" />
                             </a>
@@ -1182,7 +1159,7 @@
                     </li>
                     <li>
                         <div class="product-pic">
-                            <a href="http://www.lemall.com/product/products-pid-1011176.html" target="_blank">
+                            <a class="product-pic-href" href="http://www.lemall.com/product/products-pid-1011176.html" target="_blank">
                                 <img
                                     src="http://img2-lemall.letvimg.com/le-cloud/s-pc/resource/img/2019-06-04/201906/1559617030179.jpg" />
                             </a>
@@ -1202,7 +1179,7 @@
                     </li>
                     <li>
                         <div class="product-pic">
-                            <a href="https://www.lemall.com/product/products-pid-1011158.html" target="_blank">
+                            <a class="product-pic-href" href="https://www.lemall.com/product/products-pid-1011158.html" target="_blank">
                                 <img
                                     src="http://img2-lemall.letvimg.com/le-cloud/s-pc/resource/img/2019-05-31/201905/1559299326634.jpg" />
                             </a>
@@ -1227,62 +1204,7 @@
     <!-- 生活家 版块 E -->
 
     <!-- 快捷入口 版块 S -->
-    <div class="section" style="display:none;">
-        <div class="area-center">
-            <div class="clearfix area-header-wrap">
-                <div class="clearfix area-title"><strong class="title">快捷入口</strong></div>
-            </div>
-            <div class="quick-entry-contanier">
-                <ul class="clearfix entry-list">
-                    <li>
-                        <a class="clearfix" href="//www.le.com/" target="_blank">
-                            <div class="entry-logo"><img
-                                    src="http://img0-lemall.letvimg.com/le-cloud/resource/images/home/20181122/le.jpg" />
-                            </div>
-                            <div class="entry-txt-wrap">
-                                <div class="entry-title"><strong>乐视视频</strong></div>
-                                <div class="entry-desc">就"视"不一样</div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="clearfix" href="/leshivip/index.html" target="_blank">
-                            <div class="entry-logo"><img
-                                    src="http://img0-lemall.letvimg.com/le-cloud/resource/images/home/20181122/vip.jpg" />
-                            </div>
-                            <div class="entry-txt-wrap">
-                                <div class="entry-title"><strong>乐视会员</strong></div>
-                                <div class="entry-desc">海量专享内容</div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="clearfix" href="//bbs.le.com" target="_blank">
-                            <div class="entry-logo"><img
-                                    src="http://img0-lemall.letvimg.com/le-cloud/resource/images/home/20181122/community.jpg" />
-                            </div>
-                            <div class="entry-txt-wrap">
-                                <div class="entry-title"><strong>乐迷社区</strong></div>
-                                <div class="entry-desc">寻找志同道合的TA</div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="clearfix" href="/dkh.html" target="_blank">
-                            <div class="entry-logo"><img
-                                    src="http://img0-lemall.letvimg.com/le-cloud/resource/images/home/20181122/client.jpg" />
-                            </div>
-                            <div class="entry-txt-wrap">
-                                <div class="entry-title"><strong>大客户通道</strong></div>
-                                <div class="entry-desc">定制化解决方案</div>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!-- 快捷入口 版块 E -->
+   
 
 
     <!-- footer S -->
@@ -1460,6 +1382,16 @@
                 <div class="mt15 gray font12">打开微信，点击右上角的“魔法棒”，选择“扫一扫”功能，对准二维码即可。</div>
             </div>
         </div>
+    </div>
+    <div id="loutinav">
+        <ul>
+            <li class="active"><span>限时购</span> </li>
+            <li><span>超级电视</span> </li>
+            <li><span>精选配件</span> </li>
+            <li><span>生活家</span> </li>
+            
+            
+        </ul>
     </div>
 
 

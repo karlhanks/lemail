@@ -1047,3 +1047,54 @@
         right: 0;
         background-position: left top;
     }
+    #loutinav {
+        z-index: 999;
+        width: 45px;
+        position: fixed;
+        top: 120px;
+        left: 10px;
+        border: 1px solid #ddd;
+        background: #4c4c4c80;
+        display: none;
+        border-radius:10px;
+    }
+    
+    #loutinav ul li {
+        width: 45px;
+        height: 45px;
+        border-bottom: 1px dotted #DDDDDD;
+        list-style: none;
+        font-size: 12px;
+        text-align: center;
+        position: relative;
+        cursor: pointer;
+        
+        background: #2884c7;
+        color: #fff;
+        border-radius:50%;
+        margin:5px 0;
+    }
+    
+    #loutinav ul li span {
+        width: 25px;
+        height: 25px;
+        padding: 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius:50%;
+    }
+    
+
+    
+    #loutinav ul li.active span {
+        background: #c00;
+        color: #fff;
+        display: block;
+    }
+    
+    #loutinav ul li:hover span {
+        background: #c00;
+        color: #fff;
+        display: block;
+    }
