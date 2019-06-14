@@ -88,6 +88,7 @@
         for (var i = 0; i < d.length; i++) {
             $picsrc.addClass('lazy');
             $picsrc.eq(i).attr({ "data-original": d[i].url ,
+            src:'https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2805457478,1211138640&fm=117&gp=0.jpg',
             width:160+'px',
             height:160+'px'
         });
@@ -103,8 +104,7 @@
             $product_btn.eq(i).attr({ href: "details.html?sid=" + d[i].sid })
         }
     });
-    //懒加载
-    
+   
     var $backTop = $('#backTop');
     $(window).on('scroll', function () {//回到顶部
         if ($(window).scrollTop() > 100) {
@@ -157,7 +157,5 @@
         }
     }
     new louti().init();
-
-
-
+    
 }(jQuery)

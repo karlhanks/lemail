@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/denglu.css">
 </head>
 
-<body class="regi-body" pagetype="register" onload='createCode()'>
+<body class="regi-body" pagetype="register" >
     <div class="regi-box" style="margin:0 auto; position:relative; visibility:visible;">
         <div class="login_box">
             <div class="le_top">
@@ -147,7 +147,7 @@
                                 <ul class="regi_ul regi_login_ul">
                                     <li class="regi_form_input">
                                         <i class="icon IconPeople"></i>
-                                        
+
                                         <input type="text" autocomplete="off" tabindex="1" name="loginname"
                                             id="loginname" class="regi_login_input regi_login_input_left"
                                             placeholder="手机号" onlyMobile="1" value="">
@@ -179,7 +179,8 @@
                                                 name="regcode" placeholder="输入验证码，点击图片更换" maxlength="4"
                                                 id="verifycode"><i></i>
                                         </span>
-                                        <input type="button" id="code" onclick="createCode()" title='点击更换验证码' value="1111"/>
+                                        <input type="button" id="code"  title='点击更换验证码'
+                                            value="1111" />
                                     </li>
 
                                     <li class="regi_agree">
@@ -195,88 +196,12 @@
                                             id="submitBtn">注&nbsp;&nbsp;&nbsp;&nbsp;册</a>
                                     </li>
                                 </ul>
-
-
-
-
-                                <div class="countryArea log_countryArea" id="js-countryArea">
-                                    <i class="coun_arrows coun_arrows_top"></i>
-
-                                    <div class="scroller">
-
-                                        <div class="veri_code Scroller-Container">
-                                            <div class="veri-cou-area">
-
-                                                <h3 class="cou_title"><span>亚洲</span></h3>
-                                                <ul>
-
-                                                    <li areainfo="CN" class="on"><i class="flag flagCN"></i><u
-                                                            href="javascript:;">中国<span>+86</span></u></li>
-
-                                                    <li areainfo="HK"><i class="flag flagHK"></i><u
-                                                            href="javascript:;">中国香港<span>+852</span></u></li>
-
-                                                    <li areainfo="MO"><i class="flag flagMO"></i><u
-                                                            href="javascript:;">中国澳门<span>+853</span></u></li>
-
-                                                    <li areainfo="TW"><i class="flag flagTW"></i><u
-                                                            href="javascript:;">中国台湾<span>+886</span></u></li>
-
-                                                    <li areainfo="IN"><i class="flag flagIN"></i><u
-                                                            href="javascript:;">印度<span>+91</span></u></li>
-
-                                                    <li areainfo="SG"><i class="flag flagSG"></i><u
-                                                            href="javascript:;">新加坡<span>+65</span></u></li>
-
-                                                    <li areainfo="TH"><i class="flag flagTH"></i><u
-                                                            href="javascript:;">泰国<span>+66</span></u></li>
-
-                                                </ul>
-
-                                                <h3 class="cou_title"><span>北美洲</span></h3>
-                                                <ul>
-
-                                                    <li areainfo="US"><i class="flag flagUS"></i><u
-                                                            href="javascript:;">美国<span>+1</span></u></li>
-
-                                                    <li areainfo="CA"><i class="flag flagCA"></i><u
-                                                            href="javascript:;">加拿大<span>+1</span></u></li>
-
-                                                </ul>
-
-                                                <h3 class="cou_title"><span>大洋洲</span></h3>
-                                                <ul>
-
-                                                    <li areainfo="AU"><i class="flag flagAU"></i><u
-                                                            href="javascript:;">澳大利亚<span>+61</span></u></li>
-
-                                                    <li areainfo="NZ"><i class="flag flagNZ"></i><u
-                                                            href="javascript:;">新西兰<span>+64</span></u></li>
-
-                                                </ul>
-
-                                            </div>
-                                        </div>
-
-
-                                        <div class="Scrollbar-Container">
-                                            <div class="Scrollbar-Track">
-                                                <div class="Scrollbar-Handle"></div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
         <div class="pop_box">
             <div class="pop_bg"></div>
             <div class="pop_wrap">
@@ -284,33 +209,23 @@
                     <div class="check_box">
                         <dl class="dl_check">
                             <dt class="dt_icon"><i></i></dt>
-                            <dd class="dd_note">验证邮件已发送至您的邮箱，请查收并填写邮件中的验证码</dd>
+                            <dd class="dd_note">注册成功</dd>
                         </dl>
                         <ul class="btn_box">
-                            <li><a class="regi_btn f_fl">是</a></li>
-                            <li><a class="regi-code-btn f_fr">否</a></li>
+                            <li><a class="regi_btn f_fl" href="index.html">返回首页</a></li>
+                            
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
         <script src="script/jquery.js"></script>
-        <script src="script/ajax.js"></script>
+        <script src="script/jquery.validate.js"> </script>
+        <script src="script/jquery.cookie.js"></script>
         <script src="script/register.js"></script>
-        <script>
-            var code; //在全局定义验证码
-            var checkCode = $('#code');
-            function createCode() {
-                code = "";
-                var random = new Array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R',
-                    'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z');//随机数  
-                for (var i = 0; i < 4; i++) {//循环操作  
-                    var index = Math.floor(Math.random() * 36);//取得随机数的索引（0~35）  
-                    code += random[index];//根据索引取得随机数加到code上  
-                }
-                checkCode.val(code)
-            }
-        </script>
+        
+        
+        
 
 </body>
 

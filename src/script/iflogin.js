@@ -1,0 +1,19 @@
+!function(){
+    if($.cookie('Name')){
+        //console.log($.cookie('Name'))
+        $('.topbar-login').show();
+        $('.login-wrap').show();
+        $('.logout-wrap').hide();
+        $('.topbar-logout').hide();
+        $('.nickName').html($.cookie('Name'))
+        $('.user-desc a').html($.cookie('Name'))
+    };
+    $('.logout').on('click',function(){
+        $.cookie('Name','',{expires:-1});
+        $.cookie('pass','',{expires:-1});
+        $('.topbar-login').hide();
+        $('.login-wrap').hide();
+        $('.logout-wrap').show();
+        $('.topbar-logout').show();
+    })
+}()

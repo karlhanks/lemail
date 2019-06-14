@@ -17,6 +17,7 @@
     <script src="script/jquery.js"></script>
     <script src="script/jquery-ui.js"></script>
     <script src="script/jquery.lazyload.js"></script>
+    <script src="script/jquery.cookie.js"></script>
 
     
     
@@ -39,10 +40,9 @@
                 <div class="bar-left">
                     <ul class="clearfix">
                         <li><a href="/">商城首页</a></li>
-                        <li class="topbar-logout"><a class="login" href="javascript:void(0);">登录</a><i
-                                class="gap"></i><a class="register" href="javascript:void(0);">注册</a></li>
-                        <li class="topbar-login">Hi，<span class="nickName"><a
-                                    href="/user/center/myhome.html?alys_id=head" target="_blank"></a></span><a
+                        <li class="topbar-logout"><a class="login" href="denglu.html">登录</a><i
+                                class="gap"></i><a class="register" href="register.html">注册</a></li>
+                        <li class="topbar-login">Hi，<span class="nickName"></span><a
                                 class="logout" href="javascript:void(0)">[退出]</a></li>
                     </ul>
                 </div>
@@ -372,8 +372,8 @@
                                 <div class="user-title">Hi, 您好</div>
                                 <div class="user-desc">欢迎来到乐融商城</div>
                                 <div class="user-btn"><a class="login-entry" onclick="return false;"
-                                        href="javascropt:void(0)"><strong>登录</strong></a><a class="register-entry"
-                                        onclick="return false;" href="javascropt:void(0)"><strong>注册</strong></a></div>
+                                        href="denglu.html"><strong>登录</strong></a><a class="register-entry"
+                                        onclick="return false;" href="register.html"><strong>注册</strong></a></div>
                             </div>
                             <div class="login-wrap">
                                 <div class="user-headimg"><img
@@ -1409,6 +1409,7 @@
     </div>
     <script src="script/index.js"></script>
     <script src="script/details.js"></script>
+    <script src='script/iflogin.js'></script>
 </body>
 
 </html>
