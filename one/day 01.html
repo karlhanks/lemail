@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <p>{{msg}}</p>
+        <p>年龄：{{age - 75}}</p>
+        <p>姓名：{{usename}}</p>
+        <p>姓名反转：{{usename.split('').reverse().join('')}}</p>
+        <p v-html='html'></p>
+        <p>喜欢的音乐：<a v-bind:href='url'>独家记忆</a></p>
+        <p>喜欢的音乐：<a :href='url'>独家记忆</a></p>
+        <button v-on:click='fn1'>点我试试</button>
+        <button @click='fn1'>点我试试</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                msg: '你好秀哦',
+                usename: '张三',
+                age: '100',
+                html:'<b>是个小哥哥</b>',
+                url:'https://y.qq.com/portal/player.html'
+            },
+            methods:{
+                fn1(){
+                    alert('hello')
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
